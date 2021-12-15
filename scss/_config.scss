@@ -1,0 +1,36 @@
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$vDarkCyan: hsl(179, 100%, 13%);
+$transWhite: hsla(0, 0%, 100%, 0.75);
+$vLightGray: hsl(0, 0%, 95%);
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: $transWhite;
+}
+
+@mixin subText {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: $transWhite;
+}
+
+@mixin titleText {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 500;
+  color: $vLightGray;
+  font-size: 2.5rem;
+}
+
+@mixin btnNBckgrnd($color) {
+  background-color: $color;
+  button {
+    color: $color;
+  }
+}

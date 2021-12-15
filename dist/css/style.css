@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin-bottom: 20%;
+  margin-top: 10%;
+}
+
+@media (min-width: 430px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 60%;
+    margin-top: 8%;
+    margin-bottom: 0%;
+  }
+  .container .card__one {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .container .card__three {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.container h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 500;
+  color: #f2f2f2;
+  font-size: 2.5rem;
+}
+
+.container p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7rem;
+}
+
+.container button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  color: #e38826;
+  border: 3px solid transparent;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 1em 2.5em;
+}
+
+.container button:hover {
+  color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  background-color: transparent;
+  -webkit-transition: ease-in;
+  transition: ease-in;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.container .button {
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  padding: 2.5rem 3.5rem;
+}
+
+.card img,
+.card h1,
+.card p {
+  padding-bottom: 1.5rem;
+}
+
+.card__one {
+  background-color: #e38826;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__one button {
+  color: #e38826;
+}
+
+.card__two {
+  background-color: #006970;
+}
+
+.card__two button {
+  color: #006970;
+}
+
+.card__three {
+  background-color: #004241;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card__three button {
+  color: #004241;
+}
+/*# sourceMappingURL=style.css.map */

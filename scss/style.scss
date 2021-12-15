@@ -1,0 +1,81 @@
+@import "config";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20%;
+  margin-top: 10%;
+
+  @media (min-width: 430px) {
+    flex-direction: row;
+    width: 60%;
+    margin-top: 8%;
+    margin-bottom: 0%;
+
+    .card__one {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .card__three {
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+  }
+
+  h1 {
+    @include titleText;
+  }
+
+  p {
+    @include subText;
+    line-height: 1.7rem;
+  }
+
+  button {
+    @include subText;
+    text-decoration: none;
+    color: $brightOrange;
+    border: 3px solid transparent;
+    background-color: $vLightGray;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1em 2.5em;
+
+    &:hover {
+      color: $vLightGray;
+      border: 3px solid $vLightGray;
+      background-color: transparent;
+      transition: ease-in;
+      transition-duration: 0.1s;
+      cursor: pointer;
+    }
+  }
+
+  .button {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.card {
+  padding: 2.5rem 3.5rem;
+
+  img,
+  h1,
+  p {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.card__one {
+  @include btnNBckgrnd($brightOrange);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__two {
+  @include btnNBckgrnd($darkCyan);
+}
+
+.card__three {
+  @include btnNBckgrnd($vDarkCyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
